@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<remote fetch="git://codeaurora.org/" name="caf" revision="LA.BF64.1.2.2_rb4.25" review="codeaurora.org" />
+<remote fetch="https://github.com/AOSP-CAF/" name="aosp-caf" revision="refs/heads/mm6.0" />
+<remote fetch="https://github.com/TheMuppets/" name="tm" />
+<remote name="cm" fetch="https://github.com/CyanogenMod" revision="refs/heads/cm-13.0" />
+<remote name="zf2-du" fetch="https://github.com/Zenfone2-DU" revision="refs/heads/m-caf" />
+<remote name="aokp" revision="refs/heads/mm" fetch=".." review="gerrit.aokp.co" />
+
+<remove-project name="platform/hardware/intel/img/psb_video" />
+<remove-project name="platform/hardware/intel/img/psb_headers" />
+<remove-project name="platform/hardware/intel/img/hwcomposer" />
+<remove-project name="platform/hardware/intel/common/omx-components" />
+<remove-project name="platform/hardware/intel/common/libwsbm" />
+<remove-project name="platform/hardware/intel/common/libva" />
+<remove-project name="platform/hardware/intel/common/libmix" />
+
+<project path="hardware/intel/common/libmix" name="android_hardware_intel_common_libmix" remote="cm" />
+<project path="hardware/intel/common/libva" name="android_hardware_intel_common_libva" remote="cm" />
+<project path="hardware/intel/common/libwsbm" name="android_hardware_intel_common_libwsbm" remote="cm" />
+<project path="hardware/intel/common/omx-components" name="android_hardware_intel_common_omx-components" remote="cm" />
+<project path="hardware/intel/img/hwcomposer" name="android_hardware_intel_img_hwcomposer" remote="cm" />
+<project path="hardware/intel/img/psb_headers" name="android_hardware_intel_img_psb_headers" remote="cm" />
+<project path="hardware/intel/img/psb_video" name="android_hardware_intel_img_psb_video" remote="cm" />
+<project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-13.0" />
+<project name="android_device_asus_Z00A" path="device/asus/Z00A" remote="zf2-du"/>
+<project name="android_device_asus_mofd-common" path="device/asus/mofd-common" remote="zf2-du" />
+<project path="kernel/asus/moorefield" name="android_kernel_asus_moorefield" remote="zf2-du" />
+
+</manifest>
