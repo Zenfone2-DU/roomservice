@@ -15,6 +15,8 @@
 <remove-project name="platform/hardware/intel/common/libva" />
 <remove-project name="platform/hardware/intel/common/libmix" />
 
+<project path="external/stlport" name="android_external_stlport" remote="cm" />
+<project path="frameworks/opt/hardware" remote="cm" name="android_frameworks_opt_hardware" />
 <project path="hardware/intel/common/libmix" name="android_hardware_intel_common_libmix" remote="cm" />
 <project path="hardware/intel/common/libva" name="android_hardware_intel_common_libva" remote="cm" />
 <project path="hardware/intel/common/libwsbm" name="android_hardware_intel_common_libwsbm" remote="cm" />
